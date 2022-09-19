@@ -130,3 +130,6 @@ dmypy.json
 
 # Databse files
 *.db
+
+# env files
+.env
