@@ -133,5 +133,3 @@ dmypy.json
 
 # env files
 .env
-
-Dockerfile
