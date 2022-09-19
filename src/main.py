@@ -1,6 +1,10 @@
-from dotenv import load_dotenv
 import os
+import logging
 
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ModuleNotFoundError:
+    logging.info("dotenv module not found. If this is logged in a dockerized container, this is intended.")
 
 print(os.getenv("API_KEY"))
